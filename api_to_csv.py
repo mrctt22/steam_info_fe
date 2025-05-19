@@ -43,7 +43,7 @@ def load_config(config_file):
 if __name__ == "__main__":
     config = load_config('config/config.json')
     api_key = config.get('api_key')
-    steam_id = config.get('steam_id', "76561198080452567")
+    steam_id = config.get('steam_id')
 
     # Prima chiamata: GetPlayerSummaries
     try:
